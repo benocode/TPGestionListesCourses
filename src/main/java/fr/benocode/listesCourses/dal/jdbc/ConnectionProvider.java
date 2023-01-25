@@ -1,4 +1,4 @@
-package fr.benocode.listesCourses.dal;
+package fr.benocode.listesCourses.dal.jdbc;
 
 import java.sql.Connection;
 import java.sql.SQLException;

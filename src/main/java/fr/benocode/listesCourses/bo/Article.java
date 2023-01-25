@@ -10,7 +10,7 @@ public class Article {
 	 * Crée un article
 	 * @param idArticle
 	 * @param nomArticle
-	 * @param listeCourse
+	 * @param panier
 	 */
 	public Article(int idArticle, String nomArticle, Panier panier) {
 		this.idArticle = idArticle;
@@ -28,6 +28,10 @@ public class Article {
 		this.panier = panier;
 	}
 
+	public Article(String nomArticle) {
+		this.nomArticle = nomArticle;
+	}
+
 	/* Getters et setters */
 	public String getNomArticle() {
 		return nomArticle;
@@ -39,6 +43,10 @@ public class Article {
 
 	public int getIdArticle() {
 		return idArticle;
+	}
+	
+	public void setIdArticle(int idArticle) {
+		this.idArticle = idArticle;
 	}
 
 	public Panier getPanier() {
